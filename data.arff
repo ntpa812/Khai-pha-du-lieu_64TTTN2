@@ -1,0 +1,823 @@
+@relation finalfinal-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last
+
+@attribute incomegroup {'Low income','Upper middle income','Lower middle income','High income'}
+@attribute year {2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023}
+@attribute gender {0,1}
+@attribute violence_type {'physical, sexual',physical,'physical, emotional',emotional}
+@attribute age_group {'High School, University','High School','Middle School, High School','Primary School, Middle School, High School','Primary School, Middle School'}
+@attribute bully_group {teacher,unknown,'teacher, peer',peer}
+
+@data
+'Low income',2016,0,'physical, sexual','High School, University',teacher
+'Upper middle income',2017,0,'physical, sexual','High School, University',teacher
+'Lower middle income',2016,0,'physical, sexual','High School, University',teacher
+'Upper middle income',2016,0,'physical, sexual','High School, University',teacher
+'Lower middle income',2019,0,physical,'High School, University',unknown
+'Lower middle income',2018,0,'physical, sexual','High School, University',teacher
+'Low income',2021,0,'physical, sexual','High School, University','teacher, peer'
+'Low income',2017,0,'physical, sexual','High School, University',teacher
+'Lower middle income',2014,0,'physical, sexual','High School, University',teacher
+'Lower middle income',2022,0,'physical, sexual','High School, University','teacher, peer'
+'Lower middle income',2018,0,'physical, sexual','High School, University',teacher
+'Low income',2015,0,'physical, sexual','High School, University',teacher
+'Upper middle income',2016,0,'physical, sexual','High School, University',teacher
+'Low income',2014,0,'physical, sexual','High School, University',teacher
+'Low income',2023,0,'physical, sexual','High School, University','teacher, peer'
+'Upper middle income',2018,0,physical,'High School, University',unknown
+'Lower middle income',2021,0,'physical, sexual','High School, University','teacher, peer'
+'Upper middle income',2019,0,physical,'High School, University',unknown
+'Upper middle income',2013,0,'physical, sexual','High School, University',teacher
+'Upper middle income',2019,0,physical,'High School, University',unknown
+'Lower middle income',2014,0,'physical, sexual','High School, University',teacher
+'Low income',2016,0,'physical, sexual','High School, University',teacher
+'Upper middle income',2021,0,'physical, sexual','High School, University',teacher
+'Low income',2013,0,'physical, sexual','High School, University',teacher
+'Low income',2020,0,'physical, sexual','High School, University',teacher
+'Lower middle income',2023,0,'physical, sexual','High School, University','teacher, peer'
+'Upper middle income',2015,0,'physical, sexual','High School, University',teacher
+'Low income',2018,0,'physical, sexual','High School, University',teacher
+'Lower middle income',2017,0,'physical, sexual','High School, University',teacher
+'Lower middle income',2016,0,'physical, sexual','High School, University',teacher
+'Lower middle income',2021,0,'physical, sexual','High School, University',teacher
+'Upper middle income',2018,0,physical,'High School, University',unknown
+'Upper middle income',2018,0,'physical, sexual','High School, University',teacher
+'Upper middle income',2023,0,'physical, sexual','High School, University','teacher, peer'
+'Lower middle income',2014,0,'physical, sexual','High School, University',teacher
+'Lower middle income',2022,0,'physical, sexual','High School, University','teacher, peer'
+'Lower middle income',2018,0,physical,'High School, University',unknown
+'Low income',2020,0,'physical, sexual','High School, University',teacher
+'Low income',2021,0,'physical, sexual','High School, University',teacher
+'Low income',2016,0,'physical, sexual','High School, University',teacher
+'Upper middle income',2017,0,'physical, sexual','High School, University',teacher
+'Low income',2018,0,'physical, sexual','High School, University',teacher
+'Lower middle income',2021,0,'physical, sexual','High School, University',teacher
+'Low income',2015,0,'physical, sexual','High School, University',teacher
+'Low income',2023,0,'physical, sexual','High School, University','teacher, peer'
+'Lower middle income',2016,0,'physical, sexual','High School, University',teacher
+'Upper middle income',2013,0,'physical, sexual','High School, University',teacher
+'Lower middle income',2017,0,'physical, sexual','High School, University',teacher
+'Lower middle income',2022,0,'physical, sexual','High School, University','teacher, peer'
+'Low income',2018,0,'physical, sexual','High School, University',teacher
+'Lower middle income',2013,0,'physical, sexual','High School, University',teacher
+'Lower middle income',2018,0,'physical, sexual','High School, University',teacher
+'Lower middle income',2023,0,'physical, sexual','High School, University','teacher, peer'
+'Upper middle income',2019,0,physical,'High School, University',unknown
+'Lower middle income',2018,0,'physical, sexual','High School, University',teacher
+'Lower middle income',2018,0,'physical, sexual','High School, University',teacher
+'Upper middle income',2013,0,'physical, sexual','High School, University',teacher
+'Upper middle income',2014,0,'physical, sexual','High School, University',teacher
+'Lower middle income',2013,0,'physical, sexual','High School, University',teacher
+'Lower middle income',2017,0,'physical, sexual','High School, University',teacher
+'Lower middle income',2022,0,'physical, sexual','High School, University','teacher, peer'
+'Low income',2015,0,'physical, sexual','High School, University',teacher
+'Low income',2020,0,'physical, sexual','High School, University',teacher
+'Lower middle income',2017,0,'physical, sexual','High School, University',teacher
+'Lower middle income',2018,0,'physical, sexual','High School, University',teacher
+'Lower middle income',2019,0,'physical, sexual','High School, University',teacher
+'Upper middle income',2019,0,physical,'High School, University',unknown
+'Low income',2013,0,'physical, sexual','High School, University',teacher
+'Low income',2019,0,'physical, sexual','High School, University',teacher
+'Upper middle income',2016,0,'physical, sexual','High School, University',teacher
+'Lower middle income',2016,0,'physical, sexual','High School, University',teacher
+'Lower middle income',2017,0,'physical, sexual','High School, University',teacher
+'Lower middle income',2023,0,'physical, sexual','High School, University','teacher, peer'
+'Lower middle income',2016,0,'physical, sexual','High School, University',teacher
+'Lower middle income',2022,0,'physical, sexual','High School, University','teacher, peer'
+'Lower middle income',2016,0,'physical, sexual','High School, University',teacher
+'Low income',2014,0,'physical, sexual','High School, University',teacher
+'Upper middle income',2019,0,physical,'High School, University',unknown
+'Low income',2016,0,'physical, sexual','High School, University',teacher
+'Lower middle income',2020,0,physical,'High School, University',unknown
+'Low income',2013,0,'physical, sexual','High School, University',teacher
+'Low income',2014,0,'physical, sexual','High School, University',teacher
+'Low income',2019,0,'physical, sexual','High School, University',teacher
+'Lower middle income',2015,0,'physical, sexual','High School, University',teacher
+'Low income',2014,1,'physical, emotional','High School',peer
+'Upper middle income',2014,1,'physical, emotional','Middle School, High School',peer
+'Upper middle income',2015,1,'physical, emotional','High School','teacher, peer'
+'Upper middle income',2018,1,emotional,'Middle School, High School',unknown
+'Upper middle income',2018,1,'physical, emotional','High School',peer
+'Upper middle income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Upper middle income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'Upper middle income',2022,1,emotional,'High School',peer
+'Upper middle income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Lower middle income',2015,1,'physical, emotional','High School','teacher, peer'
+'Upper middle income',2013,1,'physical, emotional','Primary School, Middle School',peer
+'Upper middle income',2015,1,'physical, emotional','High School','teacher, peer'
+'Upper middle income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Upper middle income',2016,1,'physical, emotional','Primary School, Middle School',peer
+'Upper middle income',2018,1,'physical, emotional','High School',peer
+'Upper middle income',2018,1,'physical, emotional','High School',peer
+'Upper middle income',2019,1,'physical, emotional','Primary School, Middle School',peer
+'Upper middle income',2022,1,emotional,'High School',peer
+'Upper middle income',2014,1,'physical, emotional','Middle School, High School',peer
+'Upper middle income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Upper middle income',2018,1,emotional,'Middle School, High School',unknown
+'Upper middle income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Upper middle income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2015,1,'physical, emotional','High School','teacher, peer'
+'High income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2016,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2018,1,'physical, emotional','High School',peer
+'High income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2022,1,emotional,'High School',peer
+'High income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2014,1,'physical, emotional','Middle School, High School',peer
+'High income',2015,1,'physical, emotional','High School','teacher, peer'
+'High income',2016,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2018,1,emotional,'Middle School, High School',unknown
+'High income',2018,1,'physical, emotional','High School',peer
+'High income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2022,1,emotional,'High School',peer
+'High income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Upper middle income',2016,1,'physical, emotional','Primary School, Middle School',peer
+'Upper middle income',2018,1,emotional,'Middle School, High School',unknown
+'Upper middle income',2018,1,'physical, emotional','High School',peer
+'Upper middle income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Upper middle income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'Upper middle income',2022,1,emotional,'High School',peer
+'Upper middle income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2013,1,'physical, emotional','High School',peer
+'High income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2016,1,'physical, emotional','High School',peer
+'High income',2016,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Lower middle income',2014,1,'physical, emotional','High School',peer
+'Upper middle income',2018,1,'physical, emotional','High School',peer
+'Upper middle income',2019,1,physical,'High School, University',unknown
+'High income',2014,1,'physical, emotional','Middle School, High School',peer
+'High income',2015,1,'physical, emotional','High School','teacher, peer'
+'High income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2016,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2018,1,emotional,'Middle School, High School',unknown
+'High income',2018,1,'physical, emotional','High School',peer
+'High income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2022,1,emotional,'High School',peer
+'High income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Lower middle income',2016,1,'physical, emotional','High School',peer
+'Lower middle income',2016,1,'physical, emotional','High School',peer
+'Lower middle income',2017,1,'physical, sexual','High School','teacher, peer'
+'Lower middle income',2018,1,'physical, emotional','High School',peer
+'Upper middle income',2018,1,'physical, emotional','High School',peer
+'Upper middle income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Upper middle income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Upper middle income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Upper middle income',2016,1,'physical, sexual','High School, University','teacher, peer'
+'Upper middle income',2013,1,'physical, emotional','Primary School, Middle School',peer
+'Upper middle income',2015,1,'physical, emotional','High School','teacher, peer'
+'Upper middle income',2018,1,'physical, emotional','High School',peer
+'Upper middle income',2019,1,'physical, emotional','Primary School, Middle School',peer
+'Upper middle income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'Upper middle income',2022,1,emotional,'High School',peer
+'Upper middle income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2014,1,'physical, emotional','High School',peer
+'High income',2018,1,'physical, emotional','High School',peer
+'High income',2022,1,emotional,'High School',peer
+'Upper middle income',2014,1,'physical, emotional','Middle School, High School',peer
+'Upper middle income',2015,1,'physical, emotional','High School','teacher, peer'
+'Upper middle income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Upper middle income',2016,1,'physical, emotional','Primary School, Middle School',peer
+'Upper middle income',2018,1,emotional,'Middle School, High School',unknown
+'Upper middle income',2018,1,'physical, emotional','High School',peer
+'Upper middle income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Upper middle income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'Upper middle income',2022,1,emotional,'High School',peer
+'Upper middle income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Lower middle income',2013,1,'physical, emotional','High School',peer
+'Lower middle income',2013,1,'physical, sexual','High School, University','teacher, peer'
+'Lower middle income',2017,1,'physical, sexual','High School','teacher, peer'
+'Lower middle income',2022,1,emotional,'High School',peer
+'High income',2014,1,'physical, emotional','Middle School, High School',peer
+'High income',2015,1,'physical, emotional','High School','teacher, peer'
+'High income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2016,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2018,1,emotional,'Middle School, High School',unknown
+'High income',2018,1,'physical, emotional','High School',peer
+'High income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2022,1,emotional,'High School',peer
+'High income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Low income',2019,1,physical,'High School, University',unknown
+'Low income',2019,1,physical,'High School, University',unknown
+'High income',2013,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2013,1,'physical, emotional','High School',peer
+'High income',2015,1,'physical, emotional','High School','teacher, peer'
+'High income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2016,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2018,1,'physical, emotional','High School',peer
+'High income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2022,1,emotional,'High School',peer
+'Upper middle income',2015,1,'physical, emotional','High School','teacher, peer'
+'Upper middle income',2018,1,'physical, emotional','High School',peer
+'Upper middle income',2022,1,emotional,'High School',peer
+'Upper middle income',2013,1,'physical, emotional','Primary School, Middle School',peer
+'Upper middle income',2015,1,'physical, emotional','High School','teacher, peer'
+'Upper middle income',2018,1,'physical, emotional','High School',peer
+'Upper middle income',2019,1,'physical, emotional','Primary School, Middle School',peer
+'Upper middle income',2022,1,emotional,'High School',peer
+'Low income',2018,1,physical,'High School, University',unknown
+'Upper middle income',2013,1,'physical, emotional','Primary School, Middle School',peer
+'Upper middle income',2015,1,'physical, emotional','High School','teacher, peer'
+'Upper middle income',2018,1,'physical, emotional','High School',peer
+'Upper middle income',2019,1,'physical, emotional','Primary School, Middle School',peer
+'Upper middle income',2022,1,emotional,'High School',peer
+'Lower middle income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2014,1,'physical, emotional','Middle School, High School',peer
+'High income',2015,1,'physical, emotional','High School','teacher, peer'
+'High income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2018,1,emotional,'Middle School, High School',unknown
+'High income',2018,1,'physical, emotional','High School',peer
+'High income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2022,1,emotional,'High School',peer
+'Upper middle income',2019,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2015,1,'physical, emotional','High School',peer
+'High income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2014,1,'physical, emotional','Middle School, High School',peer
+'High income',2015,1,'physical, emotional','High School','teacher, peer'
+'High income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2016,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2018,1,emotional,'Middle School, High School',unknown
+'High income',2018,1,'physical, emotional','High School',peer
+'High income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2022,1,emotional,'High School',peer
+'High income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2014,1,'physical, emotional','Middle School, High School',peer
+'High income',2015,1,'physical, emotional','High School','teacher, peer'
+'High income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2016,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2018,1,emotional,'Middle School, High School',unknown
+'High income',2018,1,'physical, emotional','High School',peer
+'High income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2022,1,emotional,'High School',peer
+'High income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Upper middle income',2013,1,'physical, emotional','Primary School, Middle School',peer
+'Upper middle income',2015,1,'physical, emotional','High School','teacher, peer'
+'Upper middle income',2016,1,'physical, emotional','High School',peer
+'Upper middle income',2018,1,'physical, emotional','High School',peer
+'Upper middle income',2019,1,'physical, emotional','Primary School, Middle School',peer
+'Upper middle income',2022,1,emotional,'High School',peer
+'Upper middle income',2013,1,'physical, emotional','Primary School, Middle School',peer
+'Upper middle income',2017,1,'physical, sexual','High School','teacher, peer'
+'Upper middle income',2019,1,'physical, emotional','Primary School, Middle School',peer
+'Lower middle income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Lower middle income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'Lower middle income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Lower middle income',2013,1,'physical, emotional','High School',peer
+'Lower middle income',2019,1,'physical, emotional','Primary School, Middle School',peer
+'Lower middle income',2022,1,emotional,'High School',peer
+'High income',2014,1,'physical, emotional','Middle School, High School',peer
+'High income',2015,1,'physical, emotional','High School','teacher, peer'
+'High income',2018,1,emotional,'Middle School, High School',unknown
+'High income',2018,1,'physical, emotional','High School',peer
+'High income',2022,1,emotional,'High School',peer
+'Lower middle income',2013,1,'physical, emotional','High School',peer
+'Upper middle income',2016,1,'physical, emotional','High School','teacher, peer'
+'Upper middle income',2021,1,physical,'High School, University',unknown
+'High income',2014,1,'physical, emotional','Middle School, High School',peer
+'High income',2015,1,'physical, emotional','High School','teacher, peer'
+'High income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2016,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2018,1,emotional,'Middle School, High School',unknown
+'High income',2018,1,'physical, emotional','High School',peer
+'High income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2022,1,emotional,'High School',peer
+'High income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2014,1,'physical, emotional','Middle School, High School',peer
+'High income',2015,1,'physical, emotional','High School','teacher, peer'
+'High income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2016,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2018,1,emotional,'Middle School, High School',unknown
+'High income',2018,1,'physical, emotional','High School',peer
+'High income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2022,1,emotional,'High School',peer
+'High income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2015,1,'physical, emotional','High School',peer
+'Upper middle income',2015,1,'physical, emotional','High School','teacher, peer'
+'Upper middle income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Upper middle income',2016,1,'physical, emotional','Primary School, Middle School',peer
+'Upper middle income',2018,1,emotional,'Middle School, High School',unknown
+'Upper middle income',2018,1,'physical, emotional','High School',peer
+'Upper middle income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Upper middle income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'Upper middle income',2022,1,emotional,'High School',peer
+'Upper middle income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2014,1,'physical, emotional','Middle School, High School',peer
+'High income',2015,1,'physical, emotional','High School','teacher, peer'
+'High income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2016,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2018,1,emotional,'Middle School, High School',unknown
+'High income',2018,1,'physical, emotional','High School',peer
+'High income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2022,1,emotional,'High School',peer
+'High income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2014,1,'physical, emotional','Middle School, High School',peer
+'High income',2015,1,'physical, emotional','High School','teacher, peer'
+'High income',2018,1,emotional,'Middle School, High School',unknown
+'High income',2018,1,'physical, emotional','High School',peer
+'High income',2022,1,emotional,'High School',peer
+'High income',2014,1,'physical, emotional','Middle School, High School',peer
+'High income',2018,1,emotional,'Middle School, High School',unknown
+'Upper middle income',2013,1,'physical, emotional','Primary School, Middle School',peer
+'Upper middle income',2015,1,'physical, emotional','High School',peer
+'Upper middle income',2017,1,'physical, sexual','High School','teacher, peer'
+'Upper middle income',2019,1,'physical, emotional','Primary School, Middle School',peer
+'Upper middle income',2022,1,emotional,'High School',peer
+'Lower middle income',2013,1,'physical, emotional','Primary School, Middle School',peer
+'Lower middle income',2017,1,'physical, sexual','High School','teacher, peer'
+'Lower middle income',2019,1,'physical, emotional','Primary School, Middle School',peer
+'Lower middle income',2019,1,physical,'High School, University',unknown
+'High income',2015,1,'physical, emotional','High School','teacher, peer'
+'High income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2016,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2018,1,'physical, emotional','High School',peer
+'High income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2022,1,emotional,'High School',peer
+'High income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2014,1,'physical, emotional','Middle School, High School',peer
+'High income',2015,1,'physical, emotional','High School','teacher, peer'
+'High income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2016,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2018,1,emotional,'Middle School, High School',unknown
+'High income',2018,1,'physical, emotional','High School',peer
+'High income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2022,1,emotional,'High School',peer
+'High income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2014,1,'physical, emotional','Middle School, High School',peer
+'High income',2015,1,'physical, emotional','High School','teacher, peer'
+'High income',2018,1,emotional,'Middle School, High School',unknown
+'High income',2018,1,'physical, emotional','High School',peer
+'High income',2022,1,emotional,'High School',peer
+'Lower middle income',2015,1,'physical, emotional','High School','teacher, peer'
+'Lower middle income',2015,1,'physical, emotional','High School','teacher, peer'
+'Lower middle income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Lower middle income',2018,1,'physical, emotional','High School',peer
+'Lower middle income',2022,1,emotional,'High School',peer
+'Lower middle income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Lower middle income',2016,1,'physical, emotional','Primary School, Middle School',peer
+'Lower middle income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Lower middle income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'Upper middle income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2014,1,'physical, emotional','Middle School, High School',peer
+'High income',2015,1,'physical, emotional','High School','teacher, peer'
+'High income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2016,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2018,1,emotional,'Middle School, High School',unknown
+'High income',2018,1,'physical, emotional','High School',peer
+'High income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2022,1,emotional,'High School',peer
+'High income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2014,1,'physical, emotional','Middle School, High School',peer
+'High income',2015,1,'physical, emotional','High School','teacher, peer'
+'High income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2016,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2018,1,emotional,'Middle School, High School',unknown
+'High income',2018,1,'physical, emotional','High School',peer
+'High income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2022,1,emotional,'High School',peer
+'High income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2014,1,'physical, emotional','Middle School, High School',peer
+'High income',2015,1,'physical, emotional','High School','teacher, peer'
+'High income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2016,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2018,1,emotional,'Middle School, High School',unknown
+'High income',2018,1,'physical, emotional','High School',peer
+'High income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2022,1,emotional,'High School',peer
+'High income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Upper middle income',2017,1,'physical, emotional','High School',peer
+'Upper middle income',2022,1,emotional,'High School',peer
+'High income',2015,1,'physical, emotional','High School','teacher, peer'
+'High income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2018,1,'physical, emotional','High School',peer
+'High income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2022,1,emotional,'High School',peer
+'High income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Upper middle income',2015,1,'physical, emotional','High School','teacher, peer'
+'Upper middle income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Upper middle income',2018,1,'physical, emotional','High School',peer
+'Upper middle income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Upper middle income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'Upper middle income',2022,1,emotional,'High School',peer
+'Upper middle income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Upper middle income',2015,1,'physical, emotional','High School','teacher, peer'
+'Upper middle income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Upper middle income',2016,1,'physical, emotional','Primary School, Middle School',peer
+'Upper middle income',2018,1,emotional,'Middle School, High School',unknown
+'Upper middle income',2018,1,'physical, emotional','High School',peer
+'Upper middle income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Upper middle income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'Upper middle income',2022,1,emotional,'High School',peer
+'Upper middle income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Lower middle income',2019,1,physical,'High School, University',unknown
+'High income',2015,1,'physical, emotional','High School','teacher, peer'
+'High income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2018,1,'physical, emotional','High School',peer
+'High income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2022,1,emotional,'High School',peer
+'High income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Upper middle income',2015,1,'physical, emotional','High School','teacher, peer'
+'Upper middle income',2018,1,'physical, emotional','High School',peer
+'Upper middle income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Upper middle income',2020,1,physical,'High School, University',unknown
+'Upper middle income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'Upper middle income',2022,1,emotional,'High School',peer
+'Upper middle income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2015,1,'physical, emotional','High School',peer
+'High income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2016,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Lower middle income',2014,1,'physical, sexual','High School, University','teacher, peer'
+'Lower middle income',2015,1,'physical, emotional','High School',peer
+'High income',2014,1,'physical, emotional','Middle School, High School',peer
+'High income',2015,1,'physical, emotional','High School','teacher, peer'
+'High income',2016,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2018,1,emotional,'Middle School, High School',unknown
+'High income',2018,1,'physical, emotional','High School',peer
+'High income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2022,1,emotional,'High School',peer
+'High income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Lower middle income',2015,1,'physical, emotional','High School','teacher, peer'
+'Lower middle income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Lower middle income',2017,1,'physical, emotional','High School','teacher, peer'
+'Lower middle income',2018,1,'physical, emotional','High School',peer
+'Lower middle income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Lower middle income',2022,1,emotional,'High School',peer
+'Lower middle income',2018,1,physical,'High School, University',unknown
+'Low income',2017,1,'physical, emotional','High School',peer
+'High income',2015,1,'physical, emotional','High School','teacher, peer'
+'High income',2014,1,'physical, emotional','Middle School, High School',peer
+'High income',2015,1,'physical, emotional','High School','teacher, peer'
+'High income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2016,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2018,1,emotional,'Middle School, High School',unknown
+'High income',2018,1,'physical, emotional','High School',peer
+'High income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2022,1,emotional,'High School',peer
+'High income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2014,1,'physical, emotional','Middle School, High School',peer
+'High income',2015,1,'physical, emotional','High School','teacher, peer'
+'High income',2018,1,emotional,'Middle School, High School',unknown
+'High income',2018,1,'physical, emotional','High School',peer
+'High income',2015,1,'physical, emotional','High School','teacher, peer'
+'High income',2016,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2018,1,'physical, emotional','High School',peer
+'High income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2022,1,emotional,'High School',peer
+'High income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Low income',2018,1,physical,'High School, University',unknown
+'Low income',2013,1,'physical, sexual','High School, University','teacher, peer'
+'Low income',2020,1,physical,'High School, University',unknown
+'Upper middle income',2015,1,'physical, emotional','High School','teacher, peer'
+'Upper middle income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Upper middle income',2018,1,'physical, emotional','High School',peer
+'Upper middle income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Upper middle income',2022,1,emotional,'High School',peer
+'Upper middle income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Upper middle income',2014,1,'physical, emotional','High School','teacher, peer'
+'High income',2014,1,'physical, emotional','Middle School, High School',peer
+'High income',2015,1,'physical, emotional','High School','teacher, peer'
+'High income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2016,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2018,1,emotional,'Middle School, High School',unknown
+'High income',2018,1,'physical, emotional','High School',peer
+'High income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2022,1,emotional,'High School',peer
+'High income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Upper middle income',2017,1,'physical, emotional','High School','teacher, peer'
+'Upper middle income',2013,1,'physical, emotional','Primary School, Middle School',peer
+'Upper middle income',2015,1,'physical, emotional','High School','teacher, peer'
+'Upper middle income',2018,1,'physical, emotional','High School',peer
+'Upper middle income',2019,1,'physical, emotional','Primary School, Middle School',peer
+'Upper middle income',2022,1,emotional,'High School',peer
+'Upper middle income',2014,1,'physical, emotional','Middle School, High School',peer
+'Upper middle income',2015,1,'physical, emotional','High School','teacher, peer'
+'Upper middle income',2018,1,emotional,'Middle School, High School',unknown
+'Upper middle income',2018,1,'physical, emotional','High School',peer
+'Upper middle income',2022,1,emotional,'High School',peer
+'Lower middle income',2013,1,'physical, emotional','High School',peer
+'Lower middle income',2018,1,physical,'High School, University',unknown
+'Lower middle income',2022,1,emotional,'High School',peer
+'Upper middle income',2015,1,'physical, emotional','High School','teacher, peer'
+'Upper middle income',2018,1,physical,'High School, University',unknown
+'Upper middle income',2018,1,'physical, emotional','High School',peer
+'Upper middle income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Upper middle income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'Upper middle income',2022,1,emotional,'High School',peer
+'Upper middle income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Lower middle income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Lower middle income',2016,1,'physical, emotional','High School',peer
+'Lower middle income',2016,1,'physical, emotional','Primary School, Middle School',peer
+'Lower middle income',2018,1,'physical, emotional','High School',peer
+'Lower middle income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Lower middle income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'Lower middle income',2022,1,emotional,'High School',peer
+'Lower middle income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Low income',2015,1,'physical, emotional','High School',peer
+'Low income',2019,1,'physical, sexual','High School, University','teacher, peer'
+'Lower middle income',2016,1,'physical, emotional','High School',peer
+'Upper middle income',2013,1,'physical, emotional','High School',peer
+'Lower middle income',2015,1,'physical, emotional','High School','teacher, peer'
+'High income',2014,1,'physical, emotional','Middle School, High School',peer
+'High income',2015,1,'physical, emotional','High School','teacher, peer'
+'High income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2016,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2018,1,emotional,'Middle School, High School',unknown
+'High income',2018,1,'physical, emotional','High School',peer
+'High income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2022,1,emotional,'High School',peer
+'High income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2015,1,'physical, emotional','High School','teacher, peer'
+'High income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2016,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2018,1,'physical, emotional','High School',peer
+'High income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2022,1,emotional,'High School',peer
+'High income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Lower middle income',2013,1,'physical, emotional','Primary School, Middle School',peer
+'Lower middle income',2019,1,'physical, emotional','Primary School, Middle School',peer
+'Lower middle income',2014,1,'physical, sexual','High School, University','teacher, peer'
+'Upper middle income',2014,1,'physical, emotional','Middle School, High School',peer
+'Upper middle income',2015,1,'physical, emotional','High School','teacher, peer'
+'Upper middle income',2018,1,emotional,'Middle School, High School',unknown
+'Upper middle income',2018,1,'physical, emotional','High School',peer
+'Upper middle income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Upper middle income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'Upper middle income',2022,1,emotional,'High School',peer
+'Upper middle income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2014,1,'physical, emotional','Middle School, High School',peer
+'High income',2015,1,'physical, emotional','High School','teacher, peer'
+'High income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2016,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2018,1,emotional,'Middle School, High School',unknown
+'High income',2018,1,'physical, emotional','High School',peer
+'High income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2022,1,emotional,'High School',peer
+'High income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2015,1,'physical, emotional','High School',peer
+'High income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2016,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Lower middle income',2018,1,physical,'High School, University',unknown
+'Lower middle income',2019,1,physical,'High School, University',unknown
+'Lower middle income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Lower middle income',2020,1,physical,'High School, University',unknown
+'High income',2013,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2017,1,'physical, sexual','High School','teacher, peer'
+'High income',2018,1,'physical, emotional','High School',peer
+'High income',2018,1,'physical, emotional','High School',peer
+'High income',2019,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2022,1,emotional,'High School',peer
+'Upper middle income',2013,1,'physical, emotional','Primary School, Middle School',peer
+'Upper middle income',2017,1,'physical, emotional','High School',peer
+'Upper middle income',2017,1,'physical, sexual','High School','teacher, peer'
+'Upper middle income',2019,1,'physical, emotional','Primary School, Middle School',peer
+'Upper middle income',2022,1,emotional,'High School',peer
+'Upper middle income',2013,1,'physical, emotional','Primary School, Middle School',peer
+'Upper middle income',2015,1,'physical, emotional','High School','teacher, peer'
+'Upper middle income',2018,1,'physical, emotional','High School',peer
+'Upper middle income',2019,1,'physical, emotional','Primary School, Middle School',peer
+'Upper middle income',2022,1,emotional,'High School',peer
+'Lower middle income',2015,1,'physical, emotional','High School',peer
+'Lower middle income',2018,1,'physical, emotional','High School',peer
+'Lower middle income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Lower middle income',2022,1,emotional,'High School',peer
+'High income',2014,1,'physical, emotional','Middle School, High School',peer
+'High income',2015,1,'physical, emotional','High School','teacher, peer'
+'High income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2016,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2018,1,emotional,'Middle School, High School',unknown
+'High income',2018,1,'physical, emotional','High School',peer
+'High income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2022,1,emotional,'High School',peer
+'High income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2014,1,'physical, emotional','Middle School, High School',peer
+'High income',2015,1,'physical, emotional','High School','teacher, peer'
+'High income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2016,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2018,1,emotional,'Middle School, High School',unknown
+'High income',2018,1,'physical, emotional','High School',peer
+'High income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2022,1,emotional,'High School',peer
+'High income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2015,1,'physical, emotional','High School','teacher, peer'
+'High income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2016,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2018,1,'physical, emotional','High School',peer
+'High income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2022,1,emotional,'High School',peer
+'High income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2014,1,'physical, emotional','Middle School, High School',peer
+'High income',2015,1,'physical, emotional','High School','teacher, peer'
+'High income',2018,1,emotional,'Middle School, High School',unknown
+'High income',2018,1,'physical, emotional','High School',peer
+'High income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2022,1,emotional,'High School',peer
+'High income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Upper middle income',2014,1,'physical, emotional','Middle School, High School',peer
+'Upper middle income',2015,1,'physical, emotional','High School','teacher, peer'
+'Upper middle income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Upper middle income',2016,1,'physical, emotional','Primary School, Middle School',peer
+'Upper middle income',2018,1,emotional,'Middle School, High School',unknown
+'Upper middle income',2018,1,'physical, emotional','High School',peer
+'Upper middle income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Upper middle income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'Low income',2016,1,'physical, sexual','High School, University','teacher, peer'
+'Lower middle income',2017,1,'physical, emotional','High School',peer
+'Lower middle income',2020,1,physical,'High School, University',unknown
+'High income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2016,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2018,1,'physical, emotional','High School',peer
+'High income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2022,1,emotional,'High School',peer
+'High income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Lower middle income',2017,1,'physical, sexual','High School','teacher, peer'
+'Upper middle income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Upper middle income',2018,1,emotional,'Middle School, High School',unknown
+'Upper middle income',2018,1,'physical, emotional','High School',peer
+'Upper middle income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Upper middle income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'Upper middle income',2022,1,emotional,'High School',peer
+'Upper middle income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2015,1,'physical, emotional','High School',peer
+'Low income',2017,1,'physical, emotional','High School',peer
+'High income',2015,1,'physical, emotional','High School','teacher, peer'
+'High income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2016,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2018,1,'physical, emotional','High School',peer
+'High income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2022,1,emotional,'High School',peer
+'High income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2014,1,'physical, emotional','Middle School, High School',peer
+'High income',2015,1,'physical, emotional','High School','teacher, peer'
+'High income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2016,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2018,1,emotional,'Middle School, High School',unknown
+'High income',2018,1,'physical, emotional','High School',peer
+'High income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2022,1,emotional,'High School',peer
+'High income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2014,1,'physical, emotional','Middle School, High School',peer
+'High income',2015,1,'physical, emotional','High School','teacher, peer'
+'High income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2016,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2018,1,emotional,'Middle School, High School',unknown
+'High income',2018,1,'physical, emotional','High School',peer
+'High income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2022,1,emotional,'High School',peer
+'High income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Upper middle income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Upper middle income',2016,1,'physical, emotional','Primary School, Middle School',peer
+'Upper middle income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Upper middle income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2014,1,'physical, emotional','Middle School, High School',peer
+'High income',2015,1,'physical, emotional','High School','teacher, peer'
+'High income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2016,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2018,1,emotional,'Middle School, High School',unknown
+'High income',2018,1,'physical, emotional','High School',peer
+'High income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2022,1,emotional,'High School',peer
+'High income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Lower middle income',2016,1,'physical, emotional','High School',peer
+'Upper middle income',2018,1,'physical, emotional','High School',peer
+'Upper middle income',2018,1,'physical, emotional','High School',peer
+'Upper middle income',2016,1,'physical, emotional','High School',peer
+'Upper middle income',2018,1,physical,'High School, University',unknown
+'High income',2014,1,'physical, emotional','Middle School, High School',peer
+'High income',2015,1,'physical, emotional','High School','teacher, peer'
+'High income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2016,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2018,1,emotional,'Middle School, High School',unknown
+'High income',2018,1,'physical, emotional','High School',peer
+'High income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2022,1,emotional,'High School',peer
+'High income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2014,1,'physical, emotional','Middle School, High School',peer
+'High income',2015,1,'physical, emotional','High School','teacher, peer'
+'High income',2018,1,emotional,'Middle School, High School',unknown
+'High income',2018,1,'physical, emotional','High School',peer
+'High income',2022,1,emotional,'High School',peer
+'High income',2015,1,'physical, emotional','High School','teacher, peer'
+'High income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2016,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2018,1,'physical, emotional','High School',peer
+'High income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2022,1,emotional,'High School',peer
+'High income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Lower middle income',2014,1,'physical, emotional','High School',peer
+'Upper middle income',2015,1,'physical, emotional','High School',peer
+'Upper middle income',2015,1,'physical, emotional','High School','teacher, peer'
+'Upper middle income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Upper middle income',2018,1,'physical, emotional','High School',peer
+'Upper middle income',2019,1,physical,'High School, University',unknown
+'Upper middle income',2022,1,emotional,'High School',peer
+'Lower middle income',2015,1,'physical, emotional','High School',peer
+'Upper middle income',2017,1,'physical, emotional','High School',peer
+'Upper middle income',2019,1,physical,'High School, University',unknown
+'High income',2015,1,'physical, emotional','High School','teacher, peer'
+'High income',2016,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2017,1,'physical, emotional','High School',peer
+'Lower middle income',2015,1,'physical, emotional','High School','teacher, peer'
+'Lower middle income',2018,1,physical,'High School, University',unknown
+'Upper middle income',2015,1,'physical, emotional','High School','teacher, peer'
+'Upper middle income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Upper middle income',2018,1,emotional,'Middle School, High School',unknown
+'Upper middle income',2018,1,'physical, emotional','High School',peer
+'Upper middle income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Upper middle income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'Upper middle income',2022,1,emotional,'High School',peer
+'Upper middle income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2020,1,physical,'High School, University',unknown
+'Upper middle income',2013,1,'physical, emotional','High School',peer
+'Upper middle income',2020,1,physical,'High School, University',unknown
+'Low income',2015,1,'physical, sexual','High School, University','teacher, peer'
+'Lower middle income',2014,1,'physical, emotional','Middle School, High School',peer
+'Lower middle income',2018,1,emotional,'Middle School, High School',unknown
+'Lower middle income',2018,1,'physical, emotional','High School',peer
+'Lower middle income',2022,1,emotional,'High School',peer
+'High income',2015,1,'physical, emotional','High School','teacher, peer'
+'High income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2016,1,'physical, emotional','High School',peer
+'High income',2016,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2018,1,'physical, emotional','High School',peer
+'High income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2022,1,emotional,'High School',peer
+'High income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2014,1,'physical, emotional','Middle School, High School',peer
+'High income',2015,1,'physical, emotional','High School','teacher, peer'
+'High income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2016,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2018,1,emotional,'Middle School, High School',unknown
+'High income',2018,1,'physical, emotional','High School',peer
+'High income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2022,1,emotional,'High School',peer
+'High income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2015,1,'physical, emotional','High School','teacher, peer'
+'High income',2015,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2016,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2018,1,'physical, emotional','High School',peer
+'High income',2019,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2022,1,emotional,'High School',peer
+'High income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'High income',2013,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2015,1,'physical, emotional','High School','teacher, peer'
+'High income',2018,1,'physical, emotional','High School',peer
+'High income',2019,1,'physical, emotional','Primary School, Middle School',peer
+'High income',2022,1,emotional,'High School',peer
+'Lower middle income',2021,1,'physical, emotional','Primary School, Middle School',peer
+'Lower middle income',2022,1,emotional,'High School',peer
+'Lower middle income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Lower middle income',2016,1,'physical, emotional','High School','teacher, peer'
+'Lower middle income',2013,1,'physical, emotional','High School',peer
+'Lower middle income',2015,1,'physical, emotional','High School','teacher, peer'
+'Lower middle income',2018,1,'physical, emotional','High School',peer
+'Lower middle income',2021,1,physical,'High School, University',unknown
+'Lower middle income',2022,1,emotional,'High School',peer
+'Lower middle income',2022,1,emotional,'High School',peer
+'Lower middle income',2023,1,'physical, emotional','Primary School, Middle School, High School',peer
+'Low income',2014,1,'physical, emotional','High School',peer
+'Low income',2014,1,'physical, sexual','High School, University','teacher, peer'
+'Low income',2017,1,'physical, sexual','High School','teacher, peer'
+'Lower middle income',2013,1,'physical, emotional','High School',peer
+'Lower middle income',2017,1,'physical, sexual','High School, University','teacher, peer'
+'Lower middle income',2019,1,physical,'High School, University',unknown
